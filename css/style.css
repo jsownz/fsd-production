@@ -18,6 +18,9 @@ body {
 .aC {
   text-align: center;
 }
+.no-mobile {
+  display: none !important;
+}
 
 .text-white {
   color: white;
@@ -48,6 +51,11 @@ header > nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+header .contact-link {
+  color: white;
+  font-size: 7vw;
+  text-decoration: none;
 }
 
 body > section {
@@ -96,27 +104,42 @@ body > section > div h5 {
 body > section > div p {
   font-weight: 500;
   font-size: 4vw;
+  line-height: 5.5vw;
 }
 
-body > section > div u.pink {
+body > section > div u.pink, body > section > div a.pink {
+  text-decoration: underline;
+  text-decoration-color: #BF408C;
+  text-decoration-thickness: .75vw;
+}
+body > section > div h3 u.pink {
   text-decoration: underline;
   text-decoration-color: #BF408C;
   text-decoration-thickness: 1vw;
 }
-body > section > div u.blue {
+body > section > div u.blue, body > section > div a.blue {
   text-decoration: underline;
   text-decoration-color: rgba(65, 209, 235,1);
   text-decoration-thickness: .75vw;
 }
-body > section > div u.green {
+body > section > div h3 u.blue {
+  text-decoration: underline;
+  text-decoration-color: #BF408C;
+  text-decoration-thickness: 1vw;
+}
+body > section > div u.green, body > section > div a.green {
   text-decoration: underline;
   text-decoration-color: rgba(10,185,10,.6);
   text-decoration-thickness: .75vw;
 }
+body > section > div h3 u.green {
+  text-decoration: underline;
+  text-decoration-color: #BF408C;
+  text-decoration-thickness: 1vw;
+}
 
 #section-1 {
   background-image: url('/images/seigaiha.png');
-  background-size: 100%;
 }
 
 #section-1 >div h1 i {
@@ -143,16 +166,17 @@ body > section > div u.green {
 
 #section-3 {
   background-image: url('/images/crossword.png');
-  background-size: 100%;
   border-bottom: 2vh solid rgba(31, 31 ,35,.95);
 }
 
 #section-4 {
   background-image: url('/images/prism.png');
-  background-size: 100%;
   position: relative;
   z-index: 1;
   box-shadow: 0 0 10px rgba(0,0,0,.3);
+  color: white;
+}
+#section-4 a {
   color: white;
 }
 
@@ -162,4 +186,90 @@ footer {
   min-height: 15vh;
   position: relative;
   z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer a {
+  color: white;
+  font-size: 5vw;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 769px) {
+  .no-mobile {
+    display: initial !important;
+  }
+  body > header {
+    padding: 1vw 2vw;
+  }
+  body > header, header .contact-link {
+    font-size: 2vw;
+  }
+
+  body > section {
+    justify-content: initial;
+  }
+
+  body > section > div h1 {
+    font-size: 8.5vw;
+  }
+  body > section > div h3 {
+    font-size: 4vw;
+  }
+  body > section > div h5 {
+    font-size: 2.6vw;
+    line-height: 3vw;
+  }
+  body > section > div p {
+    font-size: 2vw;
+    line-height: 2.5vw;
+  }
+
+  body > section > div u.pink, body > section > div a.pink {
+    text-decoration: underline;
+    text-decoration-color: #BF408C;
+    text-decoration-thickness: .5vw;
+  }
+  body > section > div h3 u.pink {
+    text-decoration: underline;
+    text-decoration-color: #BF408C;
+    text-decoration-thickness: .6vw;
+  }
+  body > section > div u.blue, body > section > div a.blue {
+    text-decoration: underline;
+    text-decoration-color: rgba(65, 209, 235,1);
+    text-decoration-thickness: .5vw;
+  }
+  body > section > div h3 u.blue {
+    text-decoration: underline;
+    text-decoration-color: #BF408C;
+    text-decoration-thickness: .6vw;
+  }
+  body > section > div u.green, body > section > div a.green {
+    text-decoration: underline;
+    text-decoration-color: rgba(10,185,10,.6);
+    text-decoration-thickness: .5vw;
+  }
+  body > section > div h3 u.green {
+    text-decoration: underline;
+    text-decoration-color: #BF408C;
+    text-decoration-thickness: .6vw;
+  }
+
+  .section .title {
+    display: flex;
+  }
+  body > .section .title .heading {
+    font-size: 8.5vw;
+  }
+  body > .section .title h2 {
+    font-size: 8.5vw;
+    margin: 0  0 0 4vw;
+  }
+
+  footer a {
+    font-size: 3.5vw;
+  }
+
 }

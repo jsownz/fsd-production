@@ -18,7 +18,7 @@ if (!('IntersectionObserver' in window) ||
         
         if (panel !== undefined) {
           if (!panel.classList.contains("reveal")) {
-            panel.classList = "reveal";
+            panel.classList.add("reveal");
           }
         }
 
