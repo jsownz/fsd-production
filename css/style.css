@@ -139,7 +139,7 @@ body > section > div h3 u.green {
 }
 
 #section-1 {
-  background-image: url('/images/seigaiha.png');
+  background-image: url('https://res.cloudinary.com/frozen-solid-designs/image/upload/f_auto,q_auto:best/v1641075851/seigaiha_ykdj2f.png');
 }
 
 #section-1 >div h1 i {
@@ -165,12 +165,12 @@ body > section > div h3 u.green {
 } */
 
 #section-3 {
-  background-image: url('/images/crossword.png');
+  background-image: url('https://res.cloudinary.com/frozen-solid-designs/image/upload/f_auto,q_auto:best/v1641075851/crossword_qr1ieh.png');
   border-bottom: 2vh solid rgba(31, 31 ,35,.95);
 }
 
 #section-4 {
-  background-image: url('/images/prism.png');
+  background-image: url('https://res.cloudinary.com/frozen-solid-designs/image/upload/f_auto,q_auto:best/v1641075850/prism_ly2ugg.png');
   position: relative;
   z-index: 1;
   box-shadow: 0 0 10px rgba(0,0,0,.3);
