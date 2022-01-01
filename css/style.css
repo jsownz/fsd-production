@@ -1,6 +1,7 @@
 html, body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
+  color: #252525;
 }
 
 html {
@@ -13,6 +14,22 @@ body {
 
 * {
   box-sizing: border-box;
+}
+.aC {
+  text-align: center;
+}
+
+.text-white {
+  color: white;
+}
+.text-pink {
+  color: #BF408C;
+}
+.text-blue{
+  color: rgba(65, 209, 235,1);
+}
+.text-green {
+  color: rgba(10,185,10,.6);
 }
 
 body > header {
@@ -27,51 +44,122 @@ body > header {
   font-size: 5.5vw;
   font-weight: 500;
 }
-
-body > section {
-  min-height: 100vh;
-  transition: background 300ms ease-in-out;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-body > section > div {
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 1s ease-in;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-body > section.reveal > div {
-  opacity: 1;
-  pointer-events: all;
-}
-
 header > nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-#section-1 {
-  background-image: url('/images/crossword.png') ;
-  background-size: 100%;
+body > section {
+  min-height: 100vh;
+  transition: background 500ms ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4vw;
 }
 
-#section-2 {
-  background: rgba(0,0,255,.3);
+body > section > div {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease-in;
 }
-#section-2.reveal {
-  background: rgba(0,255,0,.6);
+body > section.reveal > div {
+  opacity: 1;
+  pointer-events: all;
 }
-#section-2 > div {
-  font-size: 60vw;
+
+body > section > div i.heading {
+  font-size: 50vw;
 }
-#section-2.reveal > div {
+body > section > div i.spin {
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+body > section.reveal > div i.spin {
   transform: rotateY(180deg);
 }
 
+body > section > div h1 {
+  font-size: 12.5vw;
+}
+body > section > div h2 {
+  font-size: 10vw;
+}
+body > section > div h3 {
+  font-size: 8vw;
+}
+body > section > div h5 {
+  font-size: 4.6vw;
+  line-height: 6vw;
+}
+body > section > div p {
+  font-weight: 500;
+  font-size: 4vw;
+}
+
+body > section > div u.pink {
+  text-decoration: underline;
+  text-decoration-color: #BF408C;
+  text-decoration-thickness: 1vw;
+}
+body > section > div u.blue {
+  text-decoration: underline;
+  text-decoration-color: rgba(65, 209, 235,1);
+  text-decoration-thickness: .75vw;
+}
+body > section > div u.green {
+  text-decoration: underline;
+  text-decoration-color: rgba(10,185,10,.6);
+  text-decoration-thickness: .75vw;
+}
+
+#section-1 {
+  background-image: url('/images/seigaiha.png');
+  background-size: 100%;
+}
+
+#section-1 >div h1 i {
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+#section-1.reveal > div h1 i {
+  transform: rotateY(180deg);
+}
+
+#section-2 {
+  background: #41d1eb;
+  position: relative;
+  z-index: 1;
+  border-top: 2vh solid rgba(31, 31 ,35,.95);
+  border-bottom: 2vh solid rgba(31, 31 ,35,.95);
+}
+#section-2 i.heading {
+  text-shadow: 0 0 10px rgb(25 169 195);
+}
+/* #section-2.reveal {
+  background: rgba(10,185,10,.6);
+} */
+
 #section-3 {
-  background: rgba(255,0,0,.6);
+  background-image: url('/images/crossword.png');
+  background-size: 100%;
+  border-bottom: 2vh solid rgba(31, 31 ,35,.95);
+}
+
+#section-4 {
+  background-image: url('/images/prism.png');
+  background-size: 100%;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 10px rgba(0,0,0,.3);
+  color: white;
+}
+
+footer {
+  background: rgba(26, 26 ,30,1);
+  color: white;
+  min-height: 15vh;
+  position: relative;
+  z-index: 2;
 }
