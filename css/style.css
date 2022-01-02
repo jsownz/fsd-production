@@ -35,6 +35,26 @@ body {
   color: rgba(10,185,10,.6);
 }
 
+#x-btn-scroll-to-top {
+  position: fixed;
+  z-index: 500;
+  bottom: 18vh;
+  right: 6vw;
+  border: none;
+  font-size: 8vw;
+  background: rgba(255,255,255,.3);
+  border-radius: 4px;
+  padding: 2vw;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  transition: opacity 300ms ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+}
+#x-btn-scroll-to-top.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
 body > header {
   position: fixed;
   top: 0;
@@ -196,10 +216,25 @@ footer a {
   text-decoration: none;
 }
 
-@media screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
+  #x-btn-scroll-to-top {
+    right: 4vw;
+    font-size: 6vw;
+    padding: 1.5vw;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
   .no-mobile {
     display: initial !important;
   }
+
+  #x-btn-scroll-to-top {
+    right: 2vw;
+    font-size: 4vw;
+    padding: .75vw;
+  }
+
   body > header {
     padding: 1vw 2vw;
   }

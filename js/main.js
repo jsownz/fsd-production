@@ -20,13 +20,17 @@ if (!('IntersectionObserver' in window) ||
           if (!panel.classList.contains("reveal")) {
             panel.classList.add("reveal");
           }
-        }
 
-        // switch(incomingPanel) {
-        //   case 'two':
-        //       panel.classList = "reveal";
-        //     break;
-        // }
+          var scrollButton = document.querySelector("#x-btn-scroll-to-top");
+          if (incomingPanel === "intro") {
+            // hide scroll to top
+            scrollButton.classList = "";
+          } else {
+            if (!scrollButton.classList.contains("show")) {
+              scrollButton.classList = "show";
+            }
+          }
+        }
       }
     }
 
@@ -36,4 +40,9 @@ if (!('IntersectionObserver' in window) ||
   observer.observe(document.querySelector("#section-2"));
   observer.observe(document.querySelector("#section-3"));
   observer.observe(document.querySelector("#section-4"));
+
+  var scrollButton = document.querySelector("#x-btn-scroll-to-top");
+  scrollButton.addEventListener("click", function() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  });
 }
