@@ -200,6 +200,36 @@ body > section > div h3 u.green {
   color: white;
 }
 
+#section-5 {
+  background: rgba(31,31 ,35,.95);
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+#section-5 .badges-c {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#section-5 .badges-c >div {
+  width: 100%;
+}
+
+#section-5 .badges-c .app-store img {
+  width: 88%;
+}
+
+#section-5 .badges-c a {
+  display: block;
+}
+
+#section-5 .badges-c img {
+  width: 100%;
+}
+
 footer {
   background: rgba(26, 26 ,30,1);
   color: white;
@@ -303,6 +333,15 @@ footer a {
     margin: 0  0 0 4vw;
   }
 
+  #section-5 .title h2 {
+    margin: 0;
+  }
+
+  #section-5 .badges-c {
+    flex-direction: row;
+    justify-content: left;
+  }
+
   footer a {
     font-size: 3.5vw;
   }
@@ -319,5 +358,12 @@ footer a {
   body > section > div h5 {
     font-size: 2.2vw;
     line-height: 2.8vw;
+  }
+
+  #section-5 .badges-c >div {
+    width: 30vw;
+  }
+  #section-5 .badges-c .app-store img {
+    width: 78%;
   }
 }

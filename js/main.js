@@ -40,6 +40,7 @@ if (!('IntersectionObserver' in window) ||
   observer.observe(document.querySelector("#section-2"));
   observer.observe(document.querySelector("#section-3"));
   observer.observe(document.querySelector("#section-4"));
+  observer.observe(document.querySelector("#section-5"));
 
   var scrollButton = document.querySelector("#x-btn-scroll-to-top");
   scrollButton.addEventListener("click", function() {
