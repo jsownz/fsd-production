@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alyssa's Beauty Bar</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/alyssas-beauty-bar/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/alyssas-beauty-bar/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/alyssas-beauty-bar/images/favicon-16x16.png">
+  <link rel="manifest" href="/alyssas-beauty-bar/images/site.webmanifest">
+  <link rel="mask-icon" href="/alyssas-beauty-bar/images/safari-pinned-tab.svg" color="#CDB19C">
+  <link rel="shortcut icon" href="/alyssas-beauty-bar/images/favicon.ico">
+  <meta name="msapplication-TileColor" content="#CDB19C">
+  <meta name="msapplication-config" content="/alyssas-beauty-bar/images/browserconfig.xml">
+  <meta name="theme-color" content="#CDB19C">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+
+  <style>
+    * { box-sizing: border-box; }
+    html, body { height: 100%; width: 100%; margin: 0; overflow: hidden; }
+    body {
+      background: #CDB19C;
+      font-family: 'Rubik', sans-serif;
+    }
+    .bebas { font-family: 'Bebas Neue', cursive; }
+    #container {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+      gap: 4vh 0;
+    }
+    #logo-c img {
+      width: 100vw;
+      display: block;
+      margin: 0 auto;
+    }
+    #social-icons-c {
+      display: flex;
+      justify-content: center;
+      gap: 10vw;
+      padding-bottom: 8vh;
+    }
+    #social-icons-c a {
+      display: block;
+      height: 15vh;
+      width: 15vh;
+    }
+    #social-icons-c img {
+      width: 100%;
+      display: block;
+    }
+    #social-icons-c #book-now-c {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255,255,255,.5);
+      border-radius: 35px;
+      text-decoration: none;
+      font-size: 9vw;
+      color: #353535;
+      border: 12px solid #3d3d3d;
+      text-align: center;
+    }
+    @media only screen and (min-width: 768px) {
+      #container {
+        gap: 4vw 0;
+      }
+      #logo-c img {
+        width: 70vw;
+      }
+      #social-icons-c #book-now-c {
+        font-size: 6vw;
+      }
+    }
+    @media only screen and (min-width: 1024px) {
+      #container {
+        flex-direction: row;
+        justify-content: stretch;
+        gap: 0;
+      }
+      #logo-c img {
+        width: auto;
+        height: 100%;
+      }
+      #social-icons-c {
+        flex-direction: column;
+        padding-bottom: 0;
+      }
+      #social-icons-c a {
+        height: 25vh;
+        width: 25vh;
+        margin: 0 auto;
+      }
+      #social-icons-c #book-now-c {
+        font-size: 6vw;
+      }
+    }
+    @media only screen and (min-width: 1440px) {
+      #social-icons-c {
+        flex-direction: row;
+        align-items: center;
+        gap: 6vw;
+      }
+      #social-icons-c a {
+        height: 20vh;
+        width: 20vh;
+      }
+      #social-icons-c #book-now-c {
+        font-size: 3.5vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="logo-c">
+      <img src="/alyssas-beauty-bar/images/abb_logo_short.png" title="Alyssa's Beauty Bar" />
+    </div>
+    <div id="social-icons-c">
+      <div>
+        <a href="https://www.instagram.com/alyssas_beauty_bar/" title="Alyssa's Beauty Bar Instagram: @alyssas_beauty_bar">
+          <img src="/alyssas-beauty-bar/images/instagram.png" />
+        </a>
+      </div>
+      <a href="https://alyssahelm.com" id="book-now-c" class="bebas" title="Book Now!">Book Now!</a>
+    </div>
+  </div>
+</body>
+</html>
