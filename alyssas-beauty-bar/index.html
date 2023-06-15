@@ -33,10 +33,11 @@
       flex-direction: column;
       height: 100%;
       justify-content: center;
-      gap: 4vh 0;
+      /* gap: 4vh 0; */
+      overflow-y: auto;
     }
     #logo-c img {
-      width: 100vw;
+      width: 80vw;
       display: block;
       margin: 0 auto;
     }
@@ -46,10 +47,29 @@
       gap: 10vw;
       padding-bottom: 8vh;
     }
+    #consent-forms-c {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 2vh;
+      padding: 0 6vw 10vh;
+    }
     #social-icons-c a {
       display: block;
       height: 15vh;
       width: 15vh;
+    }
+    #consent-forms-c a {
+      display: block;
+      background: white;
+      padding: 3vw 1vw;
+      border-radius: 50px;
+      font-size: 4.5vw;
+      text-align: center;
+      text-decoration: none;
+      color: #333;
+      box-shadow: 0 5px 10px rgba(0,0,0,.2);
+      font-weight: 500;
     }
     #social-icons-c img {
       width: 100%;
@@ -69,13 +89,28 @@
     }
     @media only screen and (min-width: 768px) {
       #container {
-        gap: 4vw 0;
+        /* gap: 4vw 0; */
       }
       #logo-c img {
-        width: 70vw;
+        width: 40vw;
       }
       #social-icons-c #book-now-c {
         font-size: 6vw;
+      }
+      #consent-forms-c {
+        padding: 0 6vw 2vh;
+      }
+      #consent-forms-c a {
+        font-size: 3vw;
+        padding: 2vw 1vw;
+      }
+    }
+    @media only screen and (min-width: 820px) {
+      #logo-c img {
+        width: 50vw;
+      }
+      #consent-forms-c {
+        padding: 0 6vw 4vh;
       }
     }
     @media only screen and (min-width: 1024px) {
@@ -100,6 +135,13 @@
       #social-icons-c #book-now-c {
         font-size: 6vw;
       }
+      #consent-forms-c {
+        padding: 0 2vw 2vh 0;
+      }
+      #consent-forms-c a {
+        font-size: 1.8vw;
+        padding: 2vw;
+      }
     }
     @media only screen and (min-width: 1440px) {
       #social-icons-c {
@@ -114,6 +156,13 @@
       #social-icons-c #book-now-c {
         font-size: 3.5vw;
       }
+      #consent-forms-c {
+        padding: 0 2vw 2vh 0;
+      }
+      #consent-forms-c a {
+        font-size: 1.2vw;
+        padding: 1vw;
+      }
     }
   </style>
 </head>
@@ -122,13 +171,22 @@
     <div id="logo-c">
       <img src="/alyssas-beauty-bar/images/abb_logo_short.png" title="Alyssa's Beauty Bar" />
     </div>
-    <div id="social-icons-c">
+    <!-- <div id="social-icons-c">
       <div>
         <a href="https://www.instagram.com/alyssas_beauty_bar/" title="Alyssa's Beauty Bar Instagram: @alyssas_beauty_bar">
           <img src="/alyssas-beauty-bar/images/instagram.png" />
         </a>
       </div>
       <a href="http://alyssahelm.com" id="book-now-c" class="bebas" title="Book Now!">Book Now!</a>
+    </div> -->
+    <div id="consent-forms-c">
+      <a href="https://pmusign.com/u/2bylcc8bha">Brow Consent Form</a>
+      <a href="https://pmusign.com/u/p1285hleo6">Lamination Consent Form</a>
+      <a href="https://pmusign.com/u/rfm08ye8do">Pigment Removal Consent Form</a>
+      <a href="https://pmusign.com/u/g3xp03zqxh">Tiny Tat Consent Form</a>
+      <a href="https://pmusign.com/u/70fkv2lgc5">Piercing Consent Form</a>
+      <a href="https://pmusign.com/u/n0yx8zleht">Brow Consent Form - Spanish</a>
+      <a href="https://pmusign.com/u/jbyyn1fs3w">Lamination Consent Form - Spanish</a>
     </div>
   </div>
 </body>
