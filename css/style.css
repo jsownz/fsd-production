@@ -230,6 +230,14 @@ body > section > div h3 u.green {
   width: 100%;
 }
 
+#video-c iframe {
+  width: 90vw;
+  height: 50.625vw;
+}
+#video-c iframe:first-child {
+  margin-bottom: 5vw;
+}
+
 footer {
   background: rgba(26, 26 ,30,1);
   color: white;
@@ -340,6 +348,15 @@ footer a {
   #section-5 .badges-c {
     flex-direction: row;
     justify-content: left;
+  }
+
+  #video-c iframe {
+    width: 40vw;
+    height: 22.5vw;
+  }
+  #video-c iframe:first-child {
+    margin-right: 5vw;
+    margin-bottom: 0;
   }
 
   footer a {
